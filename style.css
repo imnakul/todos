@@ -1,0 +1,157 @@
+* {
+   border: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+html {
+   height: 95vh;
+   width: 98vw;
+   background-color: rgb(220, 198, 169);
+}
+
+body {
+   height: 100%;
+   width: 100%;
+   padding: 1rem;
+   margin: 1rem;
+   border: 1px solid red;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: start;
+}
+
+h1 {
+   text-align: center;
+   color: rgb(40, 75, 4);
+}
+
+.container {
+   border: 2px black solid;
+   border-radius: 1rem;
+   padding: 1rem;
+   width: 50vw;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: 1rem;
+}
+
+.todoform {
+   border: 2px solid purple;
+   border-radius: 1rem;
+   height: 25vh;
+   width: 100%;
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 1rem;
+}
+
+#todoInput {
+   grid-column: 1/4;
+   grid-row: 1/2;
+   border: 2px solid purple;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+#addTodoButton {
+   column-span: 4/5;
+   grid-row: 1/2;
+   border: 2px solid purple;
+   border-radius: 1rem;
+   padding: 1rem;
+   background-color: rgb(0, 135, 29);
+}
+
+#addTodoButton:hover {
+   background-color: rgb(6, 77, 21);
+   color: white;
+   scale: 95%;
+}
+
+#dueDateInput {
+   column-span: 1/2;
+   grid-row: 2/3;
+   border: 2px solid purple;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+#tagInput {
+   column-span: 2/3;
+   grid-row: 2/3;
+   border: 2px solid purple;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+#prioritySelect {
+   column-span: 3/4;
+   grid-row: 2/3;
+   border: 2px solid purple;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+.todoitems {
+   border: 2px solid brown;
+   border-radius: 1rem;
+   height: 55vh;
+   width: 100%;
+   padding: 1rem;
+}
+
+ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+   gap: 1rem;
+}
+
+.todoItem {
+   border: 2px solid purple;
+   border-radius: 1rem;
+   padding: 0.5rem;
+   text-align: start;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.todoText {
+   font-weight: 400;
+   padding: 0.5rem;
+}
+
+.dueDate {
+   border: 1px solid rgb(67, 49, 16);
+   border-radius: 4px;
+   background-color: orange;
+   width: 6rem;
+   padding: 0.5rem;
+}
+
+.tag {
+   border: 1px solid rgb(16, 57, 67);
+   border-radius: 4px;
+   background-color: rgb(0, 213, 255);
+   width: 6rem;
+   padding: 0.5rem;
+}
+
+.priority {
+   border: 1px solid rgb(56, 16, 67);
+   border-radius: 4px;
+   background-color: rgb(149, 0, 255);
+   width: 6rem;
+   padding: 0.5rem;
+}
