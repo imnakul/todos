@@ -11,15 +11,17 @@
     
       <div class="container">
             <h1>Todo List</h1>
-         <div class="todoform">
+         <!-- <div class="todoform"> -->
+            <form id="todoform">
             <input 
                type="text"
                id="todoInput"
                placeholder="Add a new todo item"
+               required
             />
             <button
                id="addTodoButton"
-               onclick="addTodo()"
+               type="submit"     
             >
                Add
             </button>
@@ -40,31 +42,19 @@
                <option value="medium">Medium</option>
                <option value="high">High</option>
             </select>
-         </div>
+            </form>
+         <!-- </div> -->
          <div class="todoitems">
             <ul id="todoList">
-               <!-- Todo items will be dynamically added here -->
+               <!-- Todo items will be dynamically added here
                <li class="todoItem">
-                  <!-- <checkbox class="todoCheckbox"></checkbox> -->
+                  <input type="checkbox" class="todoCheckbox" />
                   <span class="todoText">Todo1</span>
                   <span class="dueDate">2023-10-01</span>
                   <span class="tag">Work</span>
                   <span class="priority">High</span>
-               </li>
-               <li class="todoItem">
-                  <!-- <checkbox class="todoCheckbox"></checkbox> -->
-                  <span class="todoText">Todo2</span>
-                  <span class="dueDate">2023-10-02</span>
-                  <span class="tag">Personal</span>
-                  <span class="priority">Medium</span>
-               </li>
-               <li class="todoItem">
-                    <!-- <checkbox class="todoCheckbox"></checkbox> -->
-                  <span class="todoText">Todo3</span>
-                  <span class="dueDate">2023-10-03</span>
-                  <span class="tag">Study</span>
-                  <span class="priority">Low</span>
-               </li>
+               </li> -->
+               
             </ul>
          </div>
       <script

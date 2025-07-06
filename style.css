@@ -114,7 +114,7 @@ ul {
    flex-direction: column;
    justify-content: start;
    align-items: center;
-   gap: 1rem;
+   gap: 0.5rem;
 }
 
 .todoItem {
@@ -124,17 +124,22 @@ ul {
    text-align: start;
    width: 100%;
    display: grid;
-   grid-template-columns: 2fr 1fr 1fr 1fr;
+   grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+}
+
+.todoCheckbox {
+   padding: 0.5rem;
 }
 
 .todoText {
    font-weight: 400;
    padding: 0.5rem;
+   /* background-color: rgb(243, 96, 152); */
 }
 
 .dueDate {
    border: 1px solid rgb(67, 49, 16);
-   border-radius: 4px;
+   border-radius: 6px;
    background-color: orange;
    width: 6rem;
    padding: 0.5rem;
@@ -142,7 +147,7 @@ ul {
 
 .tag {
    border: 1px solid rgb(16, 57, 67);
-   border-radius: 4px;
+   border-radius: 6px;
    background-color: rgb(0, 213, 255);
    width: 6rem;
    padding: 0.5rem;
@@ -150,7 +155,7 @@ ul {
 
 .priority {
    border: 1px solid rgb(56, 16, 67);
-   border-radius: 4px;
+   border-radius: 6px;
    background-color: rgb(149, 0, 255);
    width: 6rem;
    padding: 0.5rem;
