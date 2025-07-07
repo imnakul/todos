@@ -42,7 +42,7 @@ h1 {
    gap: 1rem;
 }
 
-.todoform {
+#todoform {
    border: 2px solid purple;
    border-radius: 1rem;
    height: 25vh;
@@ -124,7 +124,7 @@ ul {
    text-align: start;
    width: 100%;
    display: grid;
-   grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+   grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
 }
 
 .todoCheckbox {
